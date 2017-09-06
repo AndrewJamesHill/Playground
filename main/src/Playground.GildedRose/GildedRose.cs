@@ -4,15 +4,10 @@ using System.Collections.Generic;
 
 namespace Playground.GildedRose
 {
-    public class GildedRose
+    public static class GildedRose
     {
-        IList<Item> Items;
-        public GildedRose(IList<Item> items)
-        {
-            Items = items;
-        }
-
-        public void UpdateQuality()
+        public static IList<Item> Items;
+        public static void UpdateQuality()
         {
             foreach(BaseItem item in Items)            
             {
