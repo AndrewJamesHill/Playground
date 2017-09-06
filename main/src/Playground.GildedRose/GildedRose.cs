@@ -16,7 +16,7 @@ namespace Playground.GildedRose
         {
             foreach(BaseItem item in Items)            
             {
-                item.UpdateItem();
+                item.Update();
             }
         }
     }

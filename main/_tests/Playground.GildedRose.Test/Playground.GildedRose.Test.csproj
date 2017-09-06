@@ -71,6 +71,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\src\Playground.GildedRose.Common\Playground.GildedRose.Common.csproj">
+      <Project>{74de9c42-15b8-4bb4-9ecb-ac893f590080}</Project>
+      <Name>Playground.GildedRose.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\src\Playground.GildedRose\Playground.GildedRose.csproj">
       <Project>{C007743C-C1A3-41EE-BCE6-C6C630A7973D}</Project>
       <Name>Playground.GildedRose</Name>
