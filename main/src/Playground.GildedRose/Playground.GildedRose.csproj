@@ -55,6 +55,7 @@
     <Compile Include="Items\ElixirOfTheMongooseItem.cs" />
     <Compile Include="Items\Plus5DexterityVestItem.cs" />
     <Compile Include="Items\SulfurasHandOfRagnarosItem.cs" />
+    <Compile Include="Items\TestObjects\TestItems.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
