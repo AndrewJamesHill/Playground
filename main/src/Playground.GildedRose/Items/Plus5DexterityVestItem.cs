@@ -12,7 +12,19 @@ namespace Playground.GildedRose.Items
 
         public override void UpdateItem()
         {
+            if (Quality > 0)
+            {
+                Quality--;
+            }
 
+            SellIn--;
+            if (SellIn < 0)
+            {
+                if (Quality > 0)
+                {
+                    Quality--;
+                }
+            }
         }
     }
 }
