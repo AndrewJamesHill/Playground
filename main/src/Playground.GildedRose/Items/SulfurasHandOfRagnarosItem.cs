@@ -12,10 +12,7 @@ namespace Playground.GildedRose.Items
 
         public override void UpdateItem()
         {
-            if (Quality < 50)
-            {
-                Quality++;
-            }
+            IncreaseQuality();
         }
     }
 }

@@ -21,28 +21,21 @@ namespace Playground.GildedRose.Items
             {
                 Quality++;
 
-
                 if (SellIn < 11)
                 {
-                    if (Quality < 50)
-                    {
-                        Quality++;
-                    }
+                    IncreaseQuality();
                 }
 
                 if (SellIn < 6)
                 {
-                    if (Quality < 50)
-                    {
-                        Quality++;
-                    }
+                    IncreaseQuality();
                 }
             }
 
             SellIn--;
             if (SellIn < 0)
             {
-                Quality = Quality - Quality;
+                Quality = 0;
             }
         }
     }

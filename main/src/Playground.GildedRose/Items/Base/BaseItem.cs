@@ -9,5 +9,21 @@ namespace Playground.GildedRose.Items.Base
     public abstract class BaseItem : Item
     {
         public abstract void UpdateItem();
+
+        public void IncreaseQuality()
+        {
+            if (Quality < 50)
+            {
+                Quality++;
+            }
+        }
+
+        public void DecreaseQuality()
+        {
+            if (Quality > 0)
+            {
+                Quality--;
+            }
+        }
     }
 }
