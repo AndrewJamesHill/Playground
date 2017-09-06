@@ -15,7 +15,7 @@ namespace Playground.GildedRose.Items
             Name = Constants.BackstagePassesToATAFKAL80ETCConcert;
         }
 
-        public override void UpdateItem()
+        public override void Update()
         {
             if (Quality < 50)
             {

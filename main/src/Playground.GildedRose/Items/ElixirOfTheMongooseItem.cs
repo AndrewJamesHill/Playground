@@ -10,7 +10,7 @@ namespace Playground.GildedRose.Items
             Name = Constants.ElixirOfTheMongoose;
         }
 
-        public override void UpdateItem()
+        public override void Update()
         {
             DecreaseQuality();
 

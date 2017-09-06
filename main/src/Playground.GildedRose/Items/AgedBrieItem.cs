@@ -10,7 +10,7 @@ namespace Playground.GildedRose.Items
             Name = Constants.AgedBrie;
         }
 
-        public override void UpdateItem()
+        public override void Update()
         {
             IncreaseQuality();
 

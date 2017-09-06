@@ -8,7 +8,7 @@ namespace Playground.GildedRose.Items.Base
 {
     public abstract class BaseItem : Item
     {
-        public abstract void UpdateItem();
+        public abstract void Update();
 
         public void IncreaseQuality()
         {

@@ -10,13 +10,15 @@ namespace Playground.GildedRose.Items
             Name = Constants.ConjuredManaCake;
         }
 
-        public override void UpdateItem()
+        public override void Update()
         {
+            DecreaseQuality();
             DecreaseQuality();
 
             SellIn--;
             if (SellIn < 0)
             {
+                DecreaseQuality();
                 DecreaseQuality();
             }
         }
