@@ -24,18 +24,22 @@ namespace Playground.GildedRose
                 new BackstagePassesToATAFKAL80ETCConcertItem{SellIn = 5, Quality = 49},
 				new ConjuredManaCakeItem {SellIn = 3, Quality = 6}
             };
-            
+
+            GildedRose app = new GildedRose(items);
+
             for (int i = 0; i < 31; i++)
             {
                 Console.WriteLine("-------- day " + i + " --------");
                 Console.WriteLine("name, sellIn, quality");
-                foreach(BaseItem item in items)
+                foreach(Item item in items)
                 {
                     Console.WriteLine(item.Name + ", " + item.SellIn + ", " + item.Quality);
-                    item.UpdateItem();
                 }
                 Console.WriteLine("");
+                app.UpdateQuality();
             }
+
+            Console.ReadKey();
         }
     }
 }
